@@ -2,6 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-image: url(/paisajeoscuro.jpg);
+  background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,4 +15,19 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: CairoBold;
+  src: url(/fonts/Cairo-Bold.ttf);
+}
+
+@font-face {
+  font-family: CairoRegular;
+  src: url(/fonts/Cairo-Regular.ttf);
+}
+
+@font-face {
+  font-family: CairoLight;
+  src: url(/fonts/Cairo-Light.ttf);
 }
