@@ -1,23 +1,47 @@
+import { useState } from 'react'
+import About from '../components/About'
+import Contact from '../components/Contact'
 import Menu from '../components/Menu'
-import Title from '../components/Title'
-import Window from '../components/Window'
+import Portfolio from '../components/Portfolio'
 import { ContainerIndex } from '../styles/styles'
-import {AiFillStar} from 'react-icons/ai'
-import {FiLoader} from 'react-icons/fi'
+
 
 export default function Home() {
+
+  const [about, setAbout] = useState({name: "about", active: true})
+  const [portfolio, setPortfolio] = useState({name: "portfolio", active: false})
+  const [contact, setContact] = useState({name: "contact", active: false})
+
+  const onHandleTab = (tab) => {
+    if(tab === "about") {
+      setAbout({...about, active: true})
+      setPortfolio({...portfolio, active: false})
+      setContact({...contact, active: false})
+    }
+    if(tab === "portfolio") {
+      setAbout({...about, active: false})
+      setPortfolio({...portfolio, active: true})
+      setContact({...contact, active: false})
+    }
+    if(tab === "contact") {
+      setAbout({...about, active: false})
+      setPortfolio({...portfolio, active: false})
+      setContact({...contact, active: true})
+    }
+  }
+
   return (
     <ContainerIndex>
-      <Title/>
-      <Menu></Menu>
-      <div style={{display: 'flex', justifyContent: 'space-evenly', marginTop: "10%", gridArea: 'space4'}}>
-        <Window title={"SKILLS"} icon={<AiFillStar/>} colorIcon={"#FEE94E"}
-          items={["Responsive design", "HTML5, CSS and JS", "ReactJS and NextJS", "CSS Grid and Flexbox", "Styled components", "English basic"]}
-        />
-        <Window title={"IN PROGRESS"} icon={<FiLoader/>} colorIcon={"#4E89AE"} 
-          items={["React Native", "Project Management", "Platzi English Academy"]}
-        />
-      </div>
+      <Menu items={[about, portfolio, contact]} onHandleTab={onHandleTab} />
+      {
+        about.active && <About/>
+      }
+      {
+        portfolio.active && <Portfolio/>
+      }
+      {
+        contact.active && <Contact/>
+      }
     </ContainerIndex>
   )
 }

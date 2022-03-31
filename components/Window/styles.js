@@ -1,10 +1,28 @@
 import styled from "styled-components";
 
 export const Container = styled.div `
- width: 40%;
- height: 70%;
- background: #494949;
+ width: ${props => props.width ? props.width : "40%"};
+ height: ${props => props.height ? props.height : "80%"};
+ background: ${props => props.bg ? props.bg : "#494949"};
  grid-area: space4;
+ box-shadow: 1px 1px 5px black;
+ margin: 10px 0;
+ background-image: ${props => props.background && `url(${props.background})`};
+ background-size: cover;
+ background-position-y: -25%;
+ @media only screen and (max-width: 1024px) {
+    height: ${props => props.height ? props.height : "60%"};
+ }
+ @media only screen and (max-width: 767px) {
+    height: ${props => props.height ? props.height : "45%"};
+    width: ${props => props.width ? props.width : "auto"};
+ }
+ @media only screen and (max-width: 425px) {
+    width: ${props => props.width ? "90%" : "auto"};
+ }
+ @media only screen and (max-width: 375px) {
+    width: ${props => props.width ? "95%" : "auto"};
+ }
 `
 
 export const Header = styled.div `
@@ -33,6 +51,9 @@ export const Title = styled.div `
  display: flex;
  align-items: center;
  color: #333333;
+ @media only screen and (min-width: 1440px) {
+  font-size: 20px;
+ }
 `
 
 export const IconWrapper = styled.span `
@@ -45,17 +66,8 @@ export const IconWrapper = styled.span `
   color: ${props => props.color ? props.color : "#333333"};
 `
 
-export const List = styled.ul `
- width: 100%;
- height: 100%;
- padding: 15px;
- text-align: center;
-`
-
-export const ListItem = styled.li `
- color: #D9D9D9;
- font-size: 22px;
- font-family: CairoRegular;
- list-style: none;
- margin: 5px 0;
+export const Transition = styled.div `
+   /* display: ${props => props.open ? "block" : "none"}; */
+   opacity: ${props => props.open ? "1" : "0"};
+   transition: all 1000ms;
 `

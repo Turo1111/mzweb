@@ -1,29 +1,26 @@
-import React from 'react'
-import { Circle, Container, Header, IconWrapper, List, ListItem, Title } from './styles'
+import React, {useState} from 'react'
+import { Circle, Container, Header, IconWrapper, List, ListItem, Title, Transition } from './styles'
 
-const Window = ({title, icon, colorIcon, items=[]}) => {
+const Window = ({children, title, icon, colorIcon, width, height, background, hover, bg}) => {
+
+  const [open, setOpen] = useState(false)
+
  return (
-  <Container>
+  <Container width={width} height={height} background={background} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)} bg={bg}>
     <Header>
       <Circle color={"#E2202C"}/>
       <Circle color={"#FEE94E"}/>
       <Circle color={"#35B736"}/>
       <Title>
         {title}
-        <IconWrapper color={colorIcon}>
-          {icon}
-        </IconWrapper>
       </Title>
     </Header>
-    <List>
-      {
-        items.map((item)=>(
-          <ListItem>
-            {item}
-          </ListItem>
-        ))
-      }
-    </List>
+    {
+      hover ?
+        <Transition open={open}>{children }</Transition>
+      :
+      children
+    }
   </Container>
  )
 }
