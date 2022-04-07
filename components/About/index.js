@@ -7,7 +7,7 @@ import { Container, IconWrapper, List, ListItem } from "./styles"
 
 const About = () => {
 
-    const skills = ["Responsive design", "HTML5, CSS and JS", "ReactJS and NextJS", "CSS Grid and Flexbox", "Styled components", "English basic"]
+    const skills = ["Responsive design", "HTML5, CSS and JS", "ReactJS and NextJS", "CSS Grid and Flexbox", "Styled components"]
     const progress = ["React Native", "Project Management", "Platzi English Academy"]
 
     return (
