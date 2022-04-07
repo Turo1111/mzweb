@@ -14,7 +14,7 @@ export const Container = styled.div `
     height: ${props => props.height ? props.height : "60%"};
  }
  @media only screen and (max-width: 767px) {
-    height: ${props => props.height ? props.height : "45%"};
+    height: ${props => props.height ? props.height : "48%"};
     width: ${props => props.width ? props.width : "auto"};
  }
  @media only screen and (max-width: 425px) {
