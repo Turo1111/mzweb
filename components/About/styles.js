@@ -3,12 +3,11 @@ import styled from "styled-components"
 export const List = styled.ul `
  width: 100%;
  height: 100%;
- padding: 15px;
+ padding: 0 15px;
  text-align: center;
- @media only screen and (max-width: 767px) {
-  padding: 0 15px;
+ @media only screen and (max-width: 320px) {
+  margin: 5px;
  }
- 
 `
 
 export const ListItem = styled.li `
@@ -18,17 +17,23 @@ export const ListItem = styled.li `
  list-style: none;
  margin: 5px 0;
  display: flex;
- @media only screen and (min-width: 1440px) {
-  font-size: 26px;
- }
  @media only screen and (min-width: 1880px) {
   font-size: 32px;
+ }
+ @media only screen and (min-width: 1440px) {
+  font-size: 30px;
  }
  @media only screen and (max-width: 1024px) {
   font-size: 16px;
  }
+ @media only screen and (max-width: 768px) {
+  font-size: 20px;
+ }
  @media only screen and (max-width: 425px) {
-  font-size: 16px;
+  font-size: 14px;
+ }
+ @media only screen and (max-width: 320px) {
+  margin: 0;
  }
 `
 
@@ -59,7 +64,13 @@ export const IconWrapper = styled.span `
   padding: 5px;
   margin-right: 15px;
   color: #FFD93D;
+  @media only screen and (min-width: 1440px) {
+    font-size: 30px;
+   }
+  @media only screen and (max-width: 1024px) {
+   font-size: 23px;
+  }
   @media only screen and (max-width: 425px) {
     font-size: 20px;
- }
+  }
 `

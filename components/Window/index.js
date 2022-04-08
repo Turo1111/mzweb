@@ -7,7 +7,7 @@ const Window = ({children, title, icon, colorIcon, width, height, background, ho
 
  return (
   <Container width={width} height={height} background={background} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)} bg={bg}>
-    <Header>
+    <Header height={height}>
       <Circle color={"#E2202C"}/>
       <Circle color={"#FEE94E"}/>
       <Circle color={"#35B736"}/>

@@ -20,12 +20,20 @@ export const Title = styled.div `
     font-weight: bold;
     font-size: 18px;
     border-bottom: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    @media only screen and (min-width: 1440px) {
+     font-size: 26px;
+    }
 `
 
 export const Description = styled.div `
     font-family: CairoRegular;
     font-size: 12px;
     margin: 5px 0;
+    color: #d9d9d9;
+    @media only screen and (min-width: 1440px) {
+     font-size: 16px;
+    }
 `
 
 export const List = styled.ul `
@@ -38,16 +46,36 @@ export const ListItem = styled.li`
     margin: 5px;
     padding: 0 5px;
     font-size: 12px;
+    color: #d9d9d9;
+    @media only screen and (min-width: 1440px) {
+     font-size: 16px;
+    }
 `
 
 export const Link = styled.div `
     font-family: CairoRegular;
     font-weight: bold;
+    margin: 20px 0;
     font-size: 18px;
     text-align: center;
     width: 100%;
-    color: #4D96FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d9d9d9;
     :hover{
         text-decoration: underline;
+    }
+    @media only screen and (min-width: 1440px) {
+     font-size: 22px;
+    }
+`
+
+export const IconWrapper = styled.div `
+    margin: 0 10px;
+    font-size: 20px;
+    text-align: end;
+    :hover{
+        color: #FF7878;
     }
 `

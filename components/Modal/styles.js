@@ -22,10 +22,16 @@ export const Content = styled.div `
   /* margin: 10% auto; /* 15% from the top and centered */
   /* padding: 20px; */
   border: 1px solid #888;
-  width: ${props => props.width && props.width }; /* Could be more or less, depending on screen size */
+  width: ${props => props.width && props.width };
   height: ${props => props.height && props.height };
   border-radius: ${props => props.borderRadius ? '10px': '0'};
   position: relative;
+  max-width: 1386px;
+  max-height: 766px;
+  background: #494949;
+  @media only screen and (max-width: 768px) {
+    max-height: 100%;
+  }
 `
 
 export const IconWrapper = styled.div `
@@ -41,7 +47,7 @@ export const ModalContent = styled.div `
   width: 100%;
   height: inherit;
   padding: 5px 20px;
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 768px) {
     padding: 5px;  
     overflow-y: scroll;
   }
@@ -80,6 +86,9 @@ export const ModalHeader = styled.div `
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
  /*  border-radius-top: 10px; */
+ @media only screen and (max-width: 1023px) {
+  padding: 5px;  
+}
 `
 
 export const Header = styled.div `
@@ -88,6 +97,9 @@ export const Header = styled.div `
  display: flex;
  align-items: center;
  padding: 0 10px;
+ @media only screen and (max-width:1023px) {
+  height: 20px;
+ }
 `
 
 export const Circle = styled.div `
@@ -107,4 +119,16 @@ export const Title = styled.div `
  display: flex;
  align-items: center;
  color: #333333;
+ @media only screen and (min-width: 1440px) {
+  font-size: 23px;
+ }
+ @media only screen and (max-width: 1366px) {
+   font-size: 18px;
+ }
+ @media only screen and (max-width: 1024px) {
+   font-size: 16px;
+ }
+ @media only screen and (max-width: 425px) {
+   font-size: 14px;
+ }
 `

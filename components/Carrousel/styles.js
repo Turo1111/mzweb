@@ -6,12 +6,13 @@ export const Container = styled.div `
     grid-column: 1;
     grid-row: 1/3;
     position: relative;
+    padding: 20px;
     @media only screen and (max-width: 768px) {
       grid-column: 1;
       grid-row: 1;
     }
     @media only screen and (max-width: 425px) {
-      height: 40%;
+      height: 75%;
     }
 `
 export const Img = styled.div `
@@ -34,7 +35,7 @@ export const Circle = styled.div `
      -moz-border-radius: 50%;
      -webkit-border-radius: 50%;
      border-radius: 50%;
-     background: ${props => props.active && "#494949"};
+     background: ${props => props.active && "#d9d9d9"};
      margin: 0 5px;
      border: 1px solid #494949;
      :hover{
@@ -69,7 +70,7 @@ export const IconWrapper = styled.span `
   justify-content: center;
   font-size: 25px;
   padding: 5px;
-  color: #494949;
+  color: #d9d9d9;
   height: 100%;
   :hover{
     font-size: 30px;

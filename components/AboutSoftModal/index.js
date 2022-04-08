@@ -1,5 +1,7 @@
 import React from "react"
-import { Container, Description, Link, List, ListItem, Title } from "./styles"
+import { Container, Description, IconWrapper, Link, List, ListItem, Title } from "./styles"
+import {BsGithub} from "react-icons/bs"
+
 
 const AboutSoft = ({description, title, feature, link}) => {
     return(
@@ -15,7 +17,12 @@ const AboutSoft = ({description, title, feature, link}) => {
                 }
                 
             </List>
-            <Link>Go to web</Link>
+            <Link>
+                <IconWrapper>
+                    <BsGithub/>
+                </IconWrapper>
+                Go to GitHub
+            </Link>
         </Container>
     )
 }

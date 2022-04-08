@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div `
  width: ${props => props.width ? props.width : "40%"};
- height: ${props => props.height ? props.height : "80%"};
+ height: ${props => props.height ? props.height : "60vh"};
  background: ${props => props.bg ? props.bg : "#494949"};
  grid-area: space4;
  box-shadow: 1px 1px 5px black;
@@ -11,14 +11,14 @@ export const Container = styled.div `
  background-size: cover;
  background-position-y: -25%;
  @media only screen and (max-width: 1024px) {
-    height: ${props => props.height ? props.height : "60%"};
- }
+   width: ${props => props.width ? props.width : "45%"};
+}
  @media only screen and (max-width: 767px) {
-    height: ${props => props.height ? props.height : "48%"};
     width: ${props => props.width ? props.width : "auto"};
  }
- @media only screen and (max-width: 425px) {
+ @media only screen and (max-width: 480px) {
     width: ${props => props.width ? "90%" : "auto"};
+    height: ${props => props.height ? props.height : "42vh"};
  }
  @media only screen and (max-width: 375px) {
     width: ${props => props.width ? "95%" : "auto"};
@@ -32,6 +32,15 @@ export const Header = styled.div `
  display: flex;
  align-items: center;
  padding: 0 10px;
+ @media only screen and (min-width: 1920px) {
+   height: ${props => props.height ? "40px" : "60px"};
+ }
+ @media only screen and (max-width: 1366px) {
+   height: ${props => props.height ? "40px" : "50px"};
+ }
+ @media only screen and (max-width: 1024px) {
+   height: 40px;
+ }
 `
 
 export const Circle = styled.div `
@@ -53,6 +62,15 @@ export const Title = styled.div `
  color: #333333;
  @media only screen and (min-width: 1440px) {
   font-size: 20px;
+ }
+ @media only screen and (max-width: 1366px) {
+   font-size: 18px;
+ }
+ @media only screen and (max-width: 1024px) {
+   font-size: 16px;
+ }
+ @media only screen and (max-width: 425px) {
+   font-size: 14px;
  }
 `
 

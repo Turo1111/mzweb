@@ -9,14 +9,17 @@ export const Hi = styled.div `
  font-size: 50px;
  font-family: CairoRegular ;
  color: #D9D9D9 ;
- @media only screen and (max-width: 767px) {
-  font-size: 25px;
+ @media only screen and (min-width: 1600px) {
+  font-size: 56px;
   }
+  @media only screen and (max-width: 1024px) {
+    font-size: 40px;
+  }
+  @media only screen and (max-width: 767px) {
+    font-size: 25px;
+    }
   @media only screen and (max-width: 320px) {
     font-size: 20px;
-  }
-  @media only screen and (min-width: 1600px) {
-  font-size: 56px;
   }
 `
 export const Job = styled.div `
@@ -25,6 +28,9 @@ export const Job = styled.div `
  color: #D9D9D9 ;
  @media only screen and (min-width: 1600px) {
   font-size: 42px;
+  }
+  @media only screen and (max-width: 1024px) {
+    font-size: 30px;
   }
  @media only screen and (max-width: 767px) {
   font-size: 18px;

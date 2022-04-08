@@ -41,7 +41,7 @@ export const GridModal = styled.div `
     height: 100%;
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 20% 52% 28%;
+    grid-template-rows: 20% 62% 18%;
     @media only screen and (max-width: 768px) {
         grid-template-columns: 1fr;
         grid-template-rows: 4fr;

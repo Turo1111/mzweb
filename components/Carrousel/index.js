@@ -39,7 +39,7 @@ const Carrousel = ({imgs}) => {
                             alt="Picture of the author"
                             width={300}
                             height={500} 
-                            layout={"fixed"}
+                            layout={"intrinsic"}
                             />
                         </Img>
                         

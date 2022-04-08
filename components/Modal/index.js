@@ -22,14 +22,14 @@ const Modal = ({
                 height = {height}
             >   
                 <ModalHeader title={title}>
-                <Header>
-                  <Circle color={"#E2202C"}/>
-                  <Circle color={"#FEE94E"}/>
-                  <Circle color={"#35B736"}/>
-                  <Title>
-                    {title}
-                  </Title>
-                </Header>
+                    <Header>
+                      <Circle color={"#E2202C"}/>
+                      <Circle color={"#FEE94E"}/>
+                      <Circle color={"#35B736"}/>
+                      <Title>
+                        {title}
+                      </Title>
+                    </Header>
                     <IconWrapper onClick={eClose} >
                         <AiOutlineClose/>
                     </IconWrapper>
