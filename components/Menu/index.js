@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useResize } from '../../hooks/useResize'
 import { Container, IconWrapper, MenuAbsolute, MenuItem } from './styles'
 import {AiOutlineMenu} from "react-icons/ai"
+import { useEffect } from 'react'
+import { useRef } from 'react'
 
 const Menu = ({items, onHandleTab}) => {
 
@@ -9,15 +11,21 @@ const Menu = ({items, onHandleTab}) => {
 
   const [openMenu, setOpenMenu] = useState(false)
 
+  useEffect(()=>{
+    document.addEventListener('click', (e)=>{
+      if(openMenu===true && e.target.id !== "menu"){setOpenMenu(false)}
+    })
+  },)
+
  return (
-  <Container area={ancho < 1024 && true}>
+  <Container area={ancho < 1024 && true}  >
     {
       ancho < 1024 ? 
-        <IconWrapper onClick={()=>setOpenMenu(!openMenu)}>
-          <AiOutlineMenu/>
+        <IconWrapper onClick={()=>setOpenMenu(!openMenu)} id={"menu"} >
+          <AiOutlineMenu id={"menu"}/>
           {
             openMenu && 
-            <MenuAbsolute>
+            <MenuAbsolute >
               {
                 items.map(item=> 
                   <MenuItem active={item.active} key={item.name}
