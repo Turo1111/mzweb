@@ -41,6 +41,9 @@ export const Item = styled.div `
   @media only screen and (max-width: 1024px) {
     font-size: 15px;
   }
+  @media only screen and (max-width: 360px) {
+    font-size: 13px;
+  }
 `
 
 export const Center = styled.div `
