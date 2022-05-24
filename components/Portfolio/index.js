@@ -3,18 +3,19 @@ import PortfItem from "../PortfItem"
 import Window from "../Window"
 import { Container, Cosa, GridModal } from "./styles"
 import useFetch from './../../hooks/useFetch';
+import Spinner from "../Spinner";
 const axios = require('axios').default;
 
 const Portfolio = () => {
 
     const apps = useFetch('/api')
 
-    console.log(apps);
+    console.log( apps );
 
     return (
         <Container>
             {
-                apps.data === undefined ? <div style={{fontSize: 150}}>Cargando</div> :
+                apps.error ? <Spinner/> :
                 apps.data.map(item =>
                     <Window key={item.title || item} width={"300px"} height={"250px"} title={item.title || "desconocido"} background={item.principalimg} hover={true}>
                         <PortfItem item={item} />

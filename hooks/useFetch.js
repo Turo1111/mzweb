@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 
 const useFetch = (url) => {
     const [ data, setData ] = useState([])
+    const [ error, setError ] = useState(false)
 
     useEffect(() => {
       const fetchResource = async () => {
@@ -13,13 +14,13 @@ const useFetch = (url) => {
               setData(response)
               
           } catch (error) {
-              console.log(error);
+              setError(true)
           }
       }
       fetchResource()
     }, [url])
 
-    return { data }
+    return { data, error }
 }
 
 
