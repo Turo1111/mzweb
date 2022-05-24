@@ -15,7 +15,7 @@ const Portfolio = () => {
     return (
         <Container>
             {
-                apps.error ? <Spinner/> :
+                apps.load ? <Spinner/> :
                 apps.data.map(item =>
                     <Window key={item.title || item} width={"300px"} height={"250px"} title={item.title || "desconocido"} background={item.principalimg} hover={true}>
                         <PortfItem item={item} />
