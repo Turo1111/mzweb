@@ -2,11 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div `
     width: 100%;
-    height: 84%;
+    height: 100%;
     background-color: rgb(217, 217, 217, 0.8);  
     transition: all 1500ms;
     position: absolute;
-    top: 16%;
 `
 
 export const List = styled.ul `
