@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Circle, Container, Header, IconWrapper, List, ListItem, Title, Transition } from './styles'
+import { Circle, Container, Content, Header, IconWrapper, List, ListItem, Title, Transition } from './styles'
 
 import Image from 'next/image'
 
@@ -19,23 +19,24 @@ const Window = ({children, title, icon, colorIcon, width, height, background, ho
         {title}
       </Title>
     </Header>
-    {
-      background &&
-      <Image
-        src={background}
-        alt="Picture of the author"
-        width={300}
-        height={210}
-      />
-    }
-    {
-      hover ?
-        <Transition open={open}>
-          {children }
-        </Transition>
-      :
-      children
-    }
+    <Content>  
+      {
+        background &&
+        <Image
+          src={background}
+          alt="Picture of the author"
+          layout={"fill"}
+        />
+      }
+      {
+        hover ?
+          <Transition open={open}>
+            {children }
+          </Transition>
+        :
+        children
+      }
+    </Content>
   </Container>
  )
 }

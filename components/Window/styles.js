@@ -19,7 +19,6 @@ export const Container = styled.div `
  }
  @media only screen and (max-width: 480px) {
     width: ${props => props.width ? "90%" : "auto"};
-    height: ${props => props.height ? props.height : "42vh"};
  }
  @media only screen and (max-width: 375px) {
     width: ${props => props.width ? "95%" : "auto"};
@@ -42,6 +41,12 @@ export const Header = styled.div `
  @media only screen and (max-width: 1024px) {
    height: 40px;
  }
+`
+
+export const Content = styled.div`
+  width: 100%;
+  height: 84%;
+  position: relative;
 `
 
 export const Circle = styled.div `
