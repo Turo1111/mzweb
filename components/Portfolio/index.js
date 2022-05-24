@@ -9,14 +9,12 @@ const Portfolio = () => {
 
     const apps = useFetch('/api')
 
+    console.log(apps);
+
     return (
         <Container>
             {
-                apps.data.map(item =>
-                    <Window key={item.title || item} width={"300px"} height={"250px"} title={item.title || "desconocido"} background={item.principalimg} hover={true}>
-                        <PortfItem item={item} />
-                    </Window>
-                )
+                apps.data === [] ? <div style={{fontSize: 150}}>Cargando</div> : <div style={{fontSize: 150}}>Ya cargo</div>
             }
             
         </Container>
@@ -24,3 +22,9 @@ const Portfolio = () => {
 }
 
 export default Portfolio
+
+/* apps.data.map(item =>
+    <Window key={item.title || item} width={"300px"} height={"250px"} title={item.title || "desconocido"} background={item.principalimg} hover={true}>
+        <PortfItem item={item} />
+    </Window>
+) */
