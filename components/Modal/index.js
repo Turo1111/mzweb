@@ -12,7 +12,8 @@ const Modal = ({
     onButton2,
     borderRadius = false,
     width = "30%",
-    height = "35%"
+    height = "35%",
+    el
 }) => {
     return (
         <Container open={open}>
@@ -20,6 +21,7 @@ const Modal = ({
                 borderRadius = {borderRadius}
                 width = {width}
                 height = {height}
+                ref={el}
             >   
                 <ModalHeader title={title}>
                     <Header>
