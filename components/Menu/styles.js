@@ -5,7 +5,7 @@ export const Container = styled.div `
   height: 100%;
   grid-area: ${props => props.area ? "space1" : "space3"};
   padding-top: 15%;
-  z-index: 8;
+  z-index: 1;
   display: ${props => props.area && "flex"};
   justify-content: ${props => props.area && "center"};
   align-items: ${props => props.area && "center"};
