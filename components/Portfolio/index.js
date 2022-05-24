@@ -14,7 +14,7 @@ const Portfolio = () => {
     return (
         <Container>
             {
-                apps.data === [] ? <div style={{fontSize: 150}}>Cargando</div> :
+                apps.data === undefined ? <div style={{fontSize: 150}}>Cargando</div> :
                 apps.data.map(item =>
                     <Window key={item.title || item} width={"300px"} height={"250px"} title={item.title || "desconocido"} background={item.principalimg} hover={true}>
                         <PortfItem item={item} />
