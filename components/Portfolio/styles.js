@@ -6,10 +6,10 @@ export const Container = styled.div `
     width: 100%;
     height: 100%;
     padding: 5%;
-    overflow-y: scroll;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    overflow-y: scroll;
     ::-webkit-scrollbar {
         width: 5px;
     }

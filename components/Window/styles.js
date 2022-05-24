@@ -7,9 +7,10 @@ export const Container = styled.div `
  grid-area: space4;
  box-shadow: 1px 1px 5px black;
  margin: 10px 0;
+ position: relative;/* 
  background-image: ${props => props.background && `url(${props.background})`};
  background-size: cover;
- background-position-y: -25%;
+ background-position-y: -25%; */
  @media only screen and (max-width: 1024px) {
    width: ${props => props.width ? props.width : "45%"};
 }

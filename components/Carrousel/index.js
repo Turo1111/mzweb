@@ -4,7 +4,7 @@ import {MdKeyboardArrowRight, MdKeyboardArrowLeft} from "react-icons/md"
 import { useState, useEffect } from "react"
 import Image from 'next/image'
 
-const Carrousel = ({imgs}) => {
+const Carrousel = ({imgs, mobile}) => {
 
     const [indexActive, setIndexActive] = useState(1)
 
@@ -34,13 +34,22 @@ const Carrousel = ({imgs}) => {
                             key={item}
                             active={indexActive === index ? true : false}
                         >
-                            <Image
-                            src={item}
-                            alt="Picture of the author"
-                            width={300}
-                            height={500} 
-                            layout={"intrinsic"}
-                            />
+                            {
+                                mobile ?
+                                    <Image
+                                        src={item}
+                                        alt="Picture of the author"
+                                        width={300}
+                                        height={500} 
+                                        layout={"intrinsic"}
+                                    />
+                                :
+                                    <Image
+                                        src={item}
+                                        alt="Picture of the author"
+                                        layout={"fill"}
+                                   />
+                            }
                         </Img>
                         
                     )

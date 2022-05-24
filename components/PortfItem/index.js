@@ -9,7 +9,7 @@ const PortfItem = ({item}) => {
 
     const [open, setOpen] = useState(false)
 
-    console.log("portfitem",item.tech);
+    console.log("portfitem",item);
 
     return(
         <Container >
@@ -23,7 +23,7 @@ const PortfItem = ({item}) => {
             </div>
             <Modal open={open} borderRadius={true} width="95%" height='92%' title={item.title || "desconocido"} eClose={()=>setOpen(false)} >
                 <GridModal>
-                    <Carrousel imgs={item.img}/>
+                    <Carrousel imgs={item.img} mobile={item.mobile}/>
                     <AboutSoft description={item.description} feature={item.feature} link={item.link} title={item.title} />
                     <TecnModal items={item.tech}/>
                 </GridModal>

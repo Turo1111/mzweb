@@ -52,7 +52,7 @@ export const ListItem = styled.li`
     }
 `
 
-export const Link = styled.div `
+export const LinkGit = styled.a `
     font-family: CairoRegular;
     font-weight: bold;
     margin: 20px 0;

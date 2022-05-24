@@ -5,6 +5,8 @@ export const Container = styled.div `
     height: 84%;
     background-color: rgb(217, 217, 217, 0.8);  
     transition: all 1500ms;
+    position: absolute;
+    top: 16%;
 `
 
 export const List = styled.ul `
