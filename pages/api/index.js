@@ -21,6 +21,16 @@ export default function handler(req, res) {
       principalimg: "/SS1.png",
       tech: ["CSS", "JS", "ReactJS", "NextJS", "Styled-Componet"],
       mobile: false
+    },
+    {
+      title: "Petgram",
+      img: ["/petgram1.png", "/petgram2.png", "/petgram3.png"],
+      description: "Petgram es una red social de mascotas donde podremos compartir imagenes y likear los posteos que mas nos gusten",
+      feature: ["Visualizar posteo imagenes", "Visualizar historias ", "Registro e Inicio de sesion", "Likear imagenes", "Lista de imagenes likeadas"],
+      link: "https://github.com/Turo1111/petgram",
+      principalimg: "/petgram1.png",
+      tech: ["CSS", "JS", "ReactJS", "Webpack", "Styled-Componet", "Infinity-Scroll", "LocalStorage" ],
+      mobile: true
     }
   ])
 }
