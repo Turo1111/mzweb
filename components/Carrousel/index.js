@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const Carrousel = ({imgs, mobile}) => {
 
-    const [indexActive, setIndexActive] = useState(1)
+    const [indexActive, setIndexActive] = useState(0)
 
     const setArrowLeft = () => {
         const index = indexActive-1
