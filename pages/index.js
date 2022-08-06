@@ -4,13 +4,15 @@ import Contact from '../components/Contact'
 import Menu from '../components/Menu'
 import Portfolio from '../components/Portfolio'
 import { ContainerIndex } from '../styles/styles'
-
+import Head from 'next/head';
 
 export default function Home() {
 
   const [about, setAbout] = useState({name: "about", active: true})
   const [portfolio, setPortfolio] = useState({name: "portfolio", active: false})
   const [contact, setContact] = useState({name: "contact", active: false})
+
+
 
   const onHandleTab = (tab) => {
     if(tab === "about") {
@@ -32,6 +34,9 @@ export default function Home() {
 
   return (
     <ContainerIndex>
+      <Head>
+        <link rel="zuritamatias" href="/archivo.ico" />
+      </Head>
       <Menu items={[about, portfolio, contact]} onHandleTab={onHandleTab} />
       {
         about.active && <About/>
