@@ -4,7 +4,6 @@ import Contact from '../components/Contact'
 import Menu from '../components/Menu'
 import Portfolio from '../components/Portfolio'
 import { ContainerIndex } from '../styles/styles'
-import Head from 'next/head';
 
 export default function Home() {
 
@@ -34,10 +33,7 @@ export default function Home() {
 
   return (
     <ContainerIndex>
-      <Head>
-        <title>About</title>
-        <link rel="icon" href="/archivo.ico" />
-      </Head>
+      
       <Menu items={[about, portfolio, contact]} onHandleTab={onHandleTab} />
       {
         about.active && <About/>

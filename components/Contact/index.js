@@ -1,3 +1,5 @@
+
+import Head from 'next/head';
 import React from "react"
 import Window from "../Window"
 import { Center, Container, IconWrapper, Item } from "./styles"
@@ -7,6 +9,10 @@ import {BsLinkedin, BsGithub} from "react-icons/bs"
 const Contact = () => {
     return(
         <Container>
+            <Head>
+              <title>Contact - Zurita Matias</title>
+              <link rel="icon" href="/contact.ico" />
+            </Head>
             <Window width={"70%"} title={"Redes "} height={"auto"} >
             <Center>
                 <Item >

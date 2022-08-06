@@ -1,9 +1,11 @@
+import Head from 'next/head';
 import React from "react"
 import Title from "../Title"
 import Window from "../Window"
 import {AiFillStar, AiOutlineLoading3Quarters} from 'react-icons/ai'
 import {FiLoader} from 'react-icons/fi'
 import { Container, IconWrapper, List, ListItem } from "./styles"
+
 
 const About = () => {
 
@@ -12,6 +14,10 @@ const About = () => {
 
     return (
         <>
+            <Head>
+              <title>About - Zurita Matias</title>
+              <link rel="icon" href="/about.ico" />
+            </Head>
             <Title/>
             <Container >
               <Window title={"SKILLS"} icon={<AiFillStar/>} colorIcon={"#FEE94E"}

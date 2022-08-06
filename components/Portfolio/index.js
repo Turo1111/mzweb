@@ -4,6 +4,8 @@ import Window from "../Window"
 import { Container, Cosa, GridModal } from "./styles"
 import useFetch from './../../hooks/useFetch';
 import Spinner from "../Spinner";
+
+import Head from 'next/head';
 const axios = require('axios').default;
 
 const Portfolio = () => {
@@ -14,6 +16,10 @@ const Portfolio = () => {
 
     return (
         <Container>
+            <Head>
+              <title>Portfolio - Zurita Matias</title>
+              <link rel="icon" href="/portfolio.ico" />
+            </Head>
             {
                 apps.load ? <Spinner/> :
                 apps.data.map(item =>
