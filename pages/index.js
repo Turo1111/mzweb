@@ -35,7 +35,8 @@ export default function Home() {
   return (
     <ContainerIndex>
       <Head>
-        <link rel="zuritamatias" href="/archivo.ico" />
+        <title>About</title>
+        <link rel="icon" href="/archivo.ico" />
       </Head>
       <Menu items={[about, portfolio, contact]} onHandleTab={onHandleTab} />
       {
