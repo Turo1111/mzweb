@@ -18,7 +18,9 @@ export const Container = styled.div `
     width: ${props => props.width ? props.width : "auto"};
  }
  @media only screen and (max-width: 480px) {
-    width: ${props => props.width ? "90%" : "auto"};
+    width: ${props => props.width ? "100%" : "auto"};
+    height: auto;
+    padding-bottom: 5px;
  }
  @media only screen and (max-width: 375px) {
     width: ${props => props.width ? "95%" : "auto"};

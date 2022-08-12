@@ -8,6 +8,7 @@ export const Container = styled.div `
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 5%;
     @media only screen and (max-width: 768px) {
       grid-column: 1/3;
       grid-row: span 2;

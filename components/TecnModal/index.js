@@ -2,7 +2,7 @@ import React from "react"
 import { Container, List, ListItem, Title } from "./styles"
 
 const TecnModal = ({items}) => {
-    console.log("tech",items);
+    ("tech",items);
     return(
         <Container>
             <Title>Technology</Title>

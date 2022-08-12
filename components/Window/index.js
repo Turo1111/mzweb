@@ -7,8 +7,6 @@ const Window = ({children, title, icon, colorIcon, width, height, background, ho
 
   const [open, setOpen] = useState(false)
 
-  console.log(background);
-
  return (
   <Container width={width} height={height} background={background} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)} bg={bg}>
     <Header height={height}>

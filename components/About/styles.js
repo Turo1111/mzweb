@@ -42,6 +42,7 @@ export const Container = styled.div `
   justify-content: space-evenly;
   align-items: center;
   grid-area: space4;
+  overflow-y: scroll;
   @media only screen and (max-width: 1023px) {
     grid-column: 1/3;
     grid-row: 2;
@@ -50,9 +51,12 @@ export const Container = styled.div `
     display: block;
     padding: 15px 20%;
   }
+  @media only screen and (max-width: 480px) {
+    padding: 10px 15%;
+  }
   @media only screen and (max-width: 425px) {
     padding: 10px 10%;
- }
+    }
 `
 
 export const IconWrapper = styled.span `
