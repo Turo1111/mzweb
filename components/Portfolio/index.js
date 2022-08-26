@@ -35,8 +35,8 @@ const apps = [
     {
         title: "AppContact",
         img: ["/app-contact1.png", "/app-contact2.png", "/app-contact3.png"],
-        description: "AppContact es una aplicacion para que los usuarios puedran agregar a sus contactos de manera rapida y segura",
-        feature: ["Crear, editar y borrar nuevos contactos", "Crear contactos randoms", "Visualizar informacion completa de los contactos", "Contactos con foto de perfil"],
+        description: "AppContact is an application for the user to add contacts easily and safely",
+        feature: ["Add, Modify y Delete new contact", "Add random contact", "See full contact information", "Add profile picture"],
         link: "https://github.com/Turo1111/app-contacts",
         principalimg: "/app-contact3.png",
         tech: ["CSS", "JS", "ReactJS", "NextJS", "Styled-Componet"],
@@ -45,8 +45,8 @@ const apps = [
       {
         title: "SimpleShop",
         img: ["/SS1.png", "/ListProductSS.png", "/CartSS.png"],
-        description: "SimpleShop es una web Ecommerce donde podras vender tus productos dandole comodidad a tus clientes de poder elegir estos segun sus detalles y cargarlos al carrito, para despues terminar su compra de manera facil y rapida",
-        feature: ["Buscador de productos", "Seleccion de talle y color de producto", "Diferentes metodos de pagos", "Creacion de usuarios para los clientes", "Guardar distintos lugares de envios", "Visualizar carrito con los productos agregados previamente"],
+        description: "SimpleShop is an Ecommerce where you can sell your products giving comfort to your customer to choose these products according to their details and add them to the cart, to later finish their purchase easily and quickly",
+        feature: ["Search products", "Select size and color", "Different payment methods", "Create user for client", "Save different shipping locations", "View cart with previously added products"],
         link: "https://github.com/Turo1111/simpleshop",
         principalimg: "/SS1.png",
         tech: ["CSS", "JS", "ReactJS", "NextJS", "Styled-Componet"],
@@ -55,8 +55,8 @@ const apps = [
       {
         title: "Petgram",
         img: ["/petgram1.png", "/petgram2.png", "/petgram3.png"],
-        description: "Petgram es una red social de mascotas donde podremos compartir imagenes y likear los posteos que mas nos gusten",
-        feature: ["Visualizar posteo imagenes", "Visualizar historias ", "Registro e Inicio de sesion", "Likear imagenes", "Lista de imagenes likeadas"],
+        description: "Petgram is a pet social where we can share images and like the posts that we like the most",
+        feature: ["View Posting Images", "View Stories", "Registration and Login", "Like Images", "List of Liked Images"],
         link: "https://github.com/Turo1111/petgram",
         principalimg: "/petgram1.png",
         tech: ["CSS", "JS", "ReactJS", "Webpack", "Styled-Componet", "Infinity-Scroll", "LocalStorage" ],
@@ -65,8 +65,8 @@ const apps = [
       {
         title: "Pokedex",
         img: ["/principal.png", "/favoritos.png", "/pokemon.png", "/cuenta.png"],
-        description: "Una Pokédex es como una enciclopedia con la que cualquiera puede consultar datos de todos los Pokémon existentes, como las debilidades y resistencias de su tipo frente a otros, los ataques que puede aprender, ya sea por nivel, MTs o crianza, una información general como su tipo o los diveros nombres que tiene en cada país, etc, las habilidades que puede poseer, su línea evolutiva si la tuviera, la descripción que le da cada Pokédex en los diversos juegos de consola, el grupo huevo al que pertenece para crianza, estrategia competitiva o sus stats base.",
-        feature: ["Lista de pokemones", "Agregar a favoritos pokemones", "Registro e Inicio de sesion", "Lista de favoritos", "Caracteristicas de pokemones"],
+        description: "A Pokédex is like an encyclopedia with which anyone can consult data on all existing Pokémon, such as the weaknesses and resistances of its type against others, the attacks it can learn, either by level, MTs or breeding, general information such as its type or the various names it has in each country, etc, the abilities it can possess, its evolutionary line if it had one, the description given by each Pokédex in the various console games, the egg group to which it belongs for breeding, competitive strategy or its base stats.",
+        feature: ["List of pokemon", "Add pokemon to favorites", "Registration and Login", "List of favorites", "Characteristics of pokemons"],
         link: "https://github.com/Turo1111/pokedex",
         principalimg: "/principal.png",
         tech: ["React Native", "JS", "CSS3", "ReactJS"],
